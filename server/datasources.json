@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "Portfolio_API": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "Portfolio_API",
+    "password": "",
+    "name": "Portfolio_API",
+    "user": "",
+    "connector": "mongodb"
+  }
+}

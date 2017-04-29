@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "Portfolio_API"
+  },
+  "AccessToken": {
+    "dataSource": "Portfolio_API",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "Portfolio_API",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "Portfolio_API",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "Portfolio_API",
+    "public": false
+  },
+  "Message": {
+    "dataSource": null
+  },
+  "Stock": {
+    "dataSource": "Portfolio_API",
+    "public": true
+  },
+  "portfolio": {
+    "dataSource": "Portfolio_API",
+    "public": true
+  }
+
+}

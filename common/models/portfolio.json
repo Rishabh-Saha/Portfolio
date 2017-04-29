@@ -1,0 +1,40 @@
+{
+  "name": "portfolio",
+  "plural": "portfolio",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+    "mongodb": {
+    "collection": "portfolio"
+  },
+  "properties": {
+    "Company_Name": {
+      "type": "string",
+      "required": true
+    },
+    "Type": {
+      "type": "string",
+      "required": true
+    },
+    "Quantity": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "Price": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "Date": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
